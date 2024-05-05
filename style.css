@@ -1,0 +1,265 @@
+ .nav-item .nav-link {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+    display:inline-block;
+}
+ .nav-item .nav-link::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:  rgba(253, 60, 41, 0.8);
+    transition: 0.3s;
+    bottom: 0;
+}
+ .nav-item .nav-link.active::after,
+ .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+    
+.top {
+    background: #00796b;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    color: #fff;
+    padding: 0;
+}
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background: #008374;
+}
+
+.left{
+    margin-left: 30%;
+}
+button[type=button]{
+    color: #0ce5cc;
+}
+.orange{
+    color: orange;
+}
+.hove a{
+    text-decoration: 0;
+   
+}
+.class{
+    color: rgb(209, 206, 206);
+}
+a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.bar-orang{
+    color: #fff;
+}
+
+.bar-orang:hover{
+    color: #fff;
+}
+
+.flex{
+    gap: 10PX;
+}
+.drop{
+    position: relative;
+}
+
+.fond{
+        width: 100%;
+        position: relative;
+        background: #008374;
+        color: #fff;
+        padding: 60px 0 0 0;
+}
+.link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+.icon{
+    font-size: 40px;
+}
+.get{
+    background-color: #1a9082;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: 0;
+}
+.link, .link-icon {
+    text-align: center;
+    text-decoration: 0;
+    color: #fff;
+    background: #008d7d;
+    border-radius: 8px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+.watche{
+    text-decoration: 0;
+}
+
+/* 4 PARTI */
+.bar-green{
+    width: 7%;
+    height: 4px;
+    background-color: #00796b;
+    transform: translateX(32rem);
+}
+.img{
+    width: 500px;
+}
+.bi-check-circle-fill{
+    color: #008d7d;
+}
+.H1{
+    color: #008374;
+}
+
+.largeur{
+    width: 10%;
+}
+
+.call-to-action .container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(cta-bg.jpg) center center;
+    background-size: cover;
+    padding: 100px 60px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* our service */
+.sections-bg{
+    background-color: #f6f6f6;
+    padding: 5%;
+    padding: 5%;
+
+}
+.services .service-item {
+    padding: 40px;
+    background: #fff;
+    height: 100%;
+    border-radius: 10px;
+}
+.textee{
+    color: #008374;
+    text-decoration: 0;
+}
+
+/* temoin */
+.testimonial-img{
+    width: 20%;
+    border-radius: 50%;
+}
+/* portfolio */
+.color{
+    color: #06b8a3;
+}
+.white{
+    color: black;
+}
+.portfolio .portfolio-wrap img{
+        transition: 0.3s;
+        
+}
+.istee:hover{
+    color: #06b8a3;
+}
+/* our team  */
+.space{
+   color: rgb(184, 182, 182);
+   display: flex;
+   gap: 10%;
+   transform: translateX(4rem);
+}
+
+
+
+
+/* pircung */
+.pricing .icon {
+    margin: 30px auto 30px auto;
+    width: 70px;
+    height: 70px;
+    background: #00796b;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+}
+
+.pricing .icon::after {
+    position: absolute;
+    content: "";
+    height: 102px;
+    width: 102px;
+    border-radius: 50%;
+    background: #d2eeeb;
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-2px);
+}
+
+.listtt{
+    font-size: 20px;
+}
+li{
+    list-style: none;
+}
+.bi-check{
+    color: #008d7d;
+    font-size: 30px;
+}
+
+sup, .number{
+    color: red;
+}
+.plan{
+    border: 3px solid #00796b;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width:768px)  {
+    .left{
+        margin: 0;
+    }
+    
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+   .bar-green{
+    display: none;
+   }
+   .img{
+    width: 300px;
+   }
+   .space{
+    display: flex;
+    gap: 5%;
+    transform: translateX(-1rem);
+    margin: 8%;
+   }
+    
+}
+
